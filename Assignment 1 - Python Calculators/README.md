@@ -1,7 +1,7 @@
 Part 1: Mortgage Payment Calculator
 	Link: "https://www.myfico.com/credit-education/calculators/loan-savings-calculator/Links"
 	My Fico calculator is described as: "The Loan Savings Calculator shows how FICO® scores impact the interest you pay on a loan. Select your loan type and state, enter the appropriate loan details and choose your current FICO® score range. You can see that working to get your score in the higher ranges can mean a big savings!"
-        &nbsp;
+
 	Using MyFico calculator as an example, referenced from the link above, the goal of this assignment is to replicate the functions of the calculator with three primary user inputs:
 	- Loan duration, 
 	- Loan amount, 
