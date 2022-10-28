@@ -22,3 +22,4 @@ Mifflin-St Jeor Equation for men: BMR = 10W + 6.25H - 5A + 5
 Mifflin-St Jeor Equation for women: BMR = 10W + 6.25H - 5A - 161
 Get input form user for gender, age, weight, and height. (let user enter height in inches and weight in lbs)
 (print) a result on how many calories that individual should consume/day and an analysis on what would be the weight if that user consumes 10% more or 10% less calories.
+
