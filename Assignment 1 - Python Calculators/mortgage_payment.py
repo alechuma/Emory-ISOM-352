@@ -1,3 +1,4 @@
+
 def total_payments(monthly_payment, n): # Multiplying monthly payments by the amount of months
     return monthly_payment*n
 
@@ -68,3 +69,18 @@ def myFICO(loan_duration, loan_amount, fico):
     total_payment = total_payments(monthly_payment, n)
     total_payment_higher = total_payments(monthly_payment_higher, n)
     total_payment_lower = total_payments(monthly_payment_lower, n)
+
+    print("\n ----myFICO Calculator----")
+    print(f"FICO: {score}, \n Loan Principal: {loan_amount}, \n Duration: {n} month(s) --> \n Monthly Payments: {monthly_payment}. \n Total payments: {total_payment}")
+    print("\n")
+    print(f"If your FICO score was {score + 50}, within bracket {bracket(score + 50)} --> \n your monthly payments would be: {monthly_payment_higher}, while total payments are {total_payment_higher}.")
+    print(f"Meaning you would save ${monthly_payment-monthly_payment_higher} on monthly payments, and ${total_payment-total_payment_higher} on total payments")
+    print("\n")
+    print(f"If your FICO score was {score - 50}, within bracket {bracket(score - 50)} --> \n your monthly payments would be: {monthly_payment_lower}, while total payments are {total_payment_lower}.")
+    print(f"Meaning you would lose ${monthly_payment_lower-monthly_payment} on monthly payments, and ${total_payment_lower-total_payment} on total payments")
+    print("\n")
+    for down_payment in [1, 0.9, 0.8, 0.7]: # Looping for the possible down payments
+        monthly = monthly_payments(n, loan_amount*down_payment, rate)
+        print(f"If you put a {round((1.0-down_payment)*100)}% down payment on the loan --> \n Monthly payments: {monthly} \n Total payments: {total_payments(monthly, n)}")
+ 
+myFICO("What is your loan duration in months: ", "What is your principal loan amount: ", "What is your FICO score [620 to 850]: ")
